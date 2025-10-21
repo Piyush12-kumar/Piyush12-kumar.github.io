@@ -1,0 +1,24 @@
+/* Add these styles to ensure proper text rendering for all elements */
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix for descenders like j, g, p, q, y getting cut off */
+p, span, h1, h2, h3, h4, h5, h6, a, button {
+  overflow: visible;
+  padding-bottom: 0.1em;
+  line-height: 1.5;
+}
+
+/* Specifically target project cards */
+#portfolio .card {
+  padding-bottom: 12px;
+}
+
+/* Ensure text spans fully display */
+#portfolio span, #portfolio p {
+  display: inline-block;
+  margin-bottom: 4px;
+}
