@@ -2,8 +2,8 @@
   "name": "piyush-kumar-portfolio",
   "private": true,
   "version": "1.0.0",
+  "homepage": "https://Piyush12-kumar.github.io/portfolio",
   "type": "module",
-  "homepage": "https://piyush12-kumar.github.io/portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

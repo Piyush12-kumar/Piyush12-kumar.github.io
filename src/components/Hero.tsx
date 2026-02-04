@@ -1,12 +1,11 @@
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, Mail } from 'lucide-react';
-import profileImage from '@/assets/profile.jpeg';
 
 export const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-16">
       <div className="container mx-auto px-4 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col items-center text-center space-y-8 animate-fade-in">
           {/* Left side - Text content */}
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
@@ -73,23 +72,6 @@ export const Hero = () => {
               >
                 <Mail className="w-6 h-6" />
               </a>
-            </div>
-          </div>
-
-          {/* Right side - Profile image */}
-          <div className="flex justify-center lg:justify-end animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary via-purple-500 to-pink-500 rounded-full blur-3xl opacity-30 animate-pulse" />
-              <div className="relative rounded-full overflow-hidden w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 border-4 border-primary/30 shadow-2xl shadow-primary/50 animate-float">
-                <img
-                  src={profileImage}
-                  alt="Piyush Kumar"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-purple-500/20 rounded-full blur-2xl" />
             </div>
           </div>
         </div>
